@@ -28,11 +28,7 @@ docker compose up -d
 
 4. Примените миграции:
 ```bash
-# Вариант 1: Через контейнер приложения
-docker compose exec app alembic upgrade head
-
-# Вариант 2: Через отдельную команду
-docker compose run --rm app alembic upgrade head
+docker compose exec backend alembic upgrade head
 ```
 
 Теперь API доступно по адресу: http://localhost:8000

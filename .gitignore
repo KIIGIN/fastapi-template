@@ -1,0 +1,107 @@
+# ----------------------------
+# .gitignore for FastAPI template
+# Tailored for a FastAPI project template with Alembic migrations.
+# This file ignores environment-specific, build, IDE and cache files
+# but keeps source, migration scripts and configuration files tracked.
+# ----------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+pip-wheel-metadata/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+
+# Environment variables / secrets
+.env
+.env.*
+secrets.yml
+
+# Python testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+htmlcov/
+junit-*.xml
+nosetests.xml
+
+# Type checkers / caches
+.mypy_cache/
+.pyright/
+pyrightconfig.json
+.ruff_cache/
+
+# Linters / pylint
+.pylint.d/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+gunicorn.pid
+*.pid
+
+# Local database files
+*.sqlite3
+*.db
+*.db-journal
+instance/
+
+# Docker local overrides / envs
+.docker/
+docker-compose.override.yml
+*.env.docker
+**/docker-compose.override.yml
+
+# Lockfiles (optional to ignore for templates; keep if you want reproducible installs)
+# Uncomment if you prefer to keep lockfiles out of the template repository
+# poetry.lock
+# Pipfile.lock
+# uv.lock
+
+# Caches created by other tools
+.cache/
+
+# Alembic caches (keep alembic.ini and migration scripts tracked)
+alembic/__pycache__/
+alembic/*.pyc
+
+# Node / frontend
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Editor project files
+.project
+.classpath
+.settings/
+
+# Backup files
+*.bak
+*.backup
